@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="com.springMvcCRUD:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/com_springMvcCRUD_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="com.springMvcCRUD/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="com.springMvcCRUD" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Spring MVC-5.2.3.RELEASE" />
+          <element id="library" level="project" name="Spring-5.2.3.RELEASE" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/jstl/standard-1.1.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/jstl/jstl-1.2.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
