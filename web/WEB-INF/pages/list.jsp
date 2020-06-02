@@ -12,9 +12,13 @@
     <title>员工列表</title>
 </head>
 <body>
+
+<%
+    pageContext.setAttribute("ctp", request.getContextPath());
+%>
     <h1>员工列表</h1>
     
-    <table>
+    <table border="1" cellpadding="5" cellspacing="0">
         <tr>
             <th>ID</th>
             <th>LastName</th>
@@ -29,11 +33,14 @@
                 <td>${emp.lastName}</td>
                 <td>${emp.email}</td>
                 <td>${emp.department.departmentName}</td>
-                <th>EDIT</th>
-                <th>DELETE</th>
+                <td>
+                    <a href="${ctp }/emp/${emp.id}">edit</a>
+                </td>
+                <td>DELETE</td>
             </tr>
         </c:forEach>
     </table>
+    <a href="toAddPage">添加员工</a>
 
 </body>
 </html>
