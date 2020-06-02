@@ -81,6 +81,11 @@ public class EmployeeController {
         return "redirect:/emps";
     }
 
+    /**
+     * 将employee对象提前读取保存到Model对象中
+     * @param id
+     * @param model
+     */
     @ModelAttribute
     public void myModelAttribute(@RequestParam(value = "id", required = false)Integer id, Model model) {
         if(id != null) {
@@ -89,5 +94,16 @@ public class EmployeeController {
            model.addAttribute("employee", employee);
         }
         System.out.println("hah");
+    }
+
+    /**
+     * 删除用户
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/emp/{id}", method = RequestMethod.DELETE)
+    public String deleteEmp(@PathVariable("id") Integer id) {
+        employeeDao.delete(id);
+        return "redirect:/emps";
     }
 }
