@@ -25,7 +25,6 @@
     dept:
         <form:select path="department.id" items="${depts}" itemLabel="departmentName" itemValue="id"/><br>
     <input type="submit" value="修改">
-
 </form:form>
 </body>
 </html>

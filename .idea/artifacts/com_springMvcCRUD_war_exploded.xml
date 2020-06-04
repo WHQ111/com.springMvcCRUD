@@ -12,6 +12,9 @@
           <element id="library" level="project" name="Spring-5.2.3.RELEASE" />
           <element id="file-copy" path="$USER_HOME$/Desktop/jstl/standard-1.1.2.jar" />
           <element id="file-copy" path="$USER_HOME$/Desktop/jstl/jstl-1.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/lib/jackson-core-2.9.8.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/lib/jackson-databind-2.9.8.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/lib/jackson-annotations-2.9.8.jar" />
         </element>
       </element>
     </root>
